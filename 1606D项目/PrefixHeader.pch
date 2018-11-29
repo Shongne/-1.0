@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  1606D项目
+//
+//  Created by 张继良 on 2018/9/27.
+//  Copyright © 2018 zhangjiliang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+// 全局的宏定义
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+
+#define HEIGHT ([UIScreen mainScreen].bounds.size.height - 64)
+
+#define RGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+//头文件
+#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "SVProgressHUD.h"//加载栏
+#import <UIImageView+WebCache.h>
+
+
+//新闻模块
+#define TOUTIAO_PATH @"http://c.m.163.com/nc/article/headline/T1348647853363/0-20.html"
+#define TOUTIAO_KEY @"T1348647853363"
+
+#define YULE_PATH @"http://c.m.163.com/nc/article/list/T1348648517839/0-20.html"
+#define YULE_KEY @"T1348648517839"
+
+#define TIYU_PATH @"http://c.m.163.com/nc/article/list/T1348649079062/0-20.html"
+#define TIYU_KEY @"T1348649079062"
+
+#define CAIJING_PATH @"http://c.m.163.com/nc/article/list/T1348648756099/0-20.html"
+#define CAIJING_KEY @"T1348648756099"
+
+#define KEJI_PATH @"http://c.m.163.com/nc/article/list/T1348649580692/0-20.html"
+#define KEJI_KEY @"T1348649580692"
+
+#define GENTIE_PATH @"http://c.m.163.com/nc/article/list/T1419315959525/0-20.html"
+#define GENTIE_KEY @"T1419315959525"
+
+#define QINGSONG_PATH @"http://c.m.163.com/nc/article/list/T1350383429665/0-20.html"
+#define QINGSONG_KEY @"T1350383429665"
+
+//视频模块
+#define VIDEO_PATH @"http://c.m.163.com/nc/video/list/V9LG4B3A0/y/0-20.html"
+
+//图片模块
+#define PICTURE_PATH @"http://c.m.163.com/photo/api/list/0096/54GI0096.json"
+//段子模块
+#define JOKE_PATH @"http://c.3g.163.com/recommend/getChanRecomNews?channel=duanzi&passport=&devId=09109B37-37DB-4DA9-B6BF-36252EBBEDAB&size=20"
+
+#endif /* PrefixHeader_pch */
